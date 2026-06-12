@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssistantChat — Atelier LangChain LCEL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app">
+        <!-- En-tête -->
+        <header class="header">
+            <div class="header-content">
+                <h1>Assistant Voyage</h1>
+                <p class="subtitle">Démo LangChain + LCEL avec mémoire de conversation</p>
+            </div>
+            <button id="reset-btn" class="btn-reset" title="Effacer la conversation">
+                Nouvelle conversation
+            </button>
+        </header>
+
+        <!-- Zone des messages -->
+        <main id="chat-container" class="chat-container">
+            <div class="welcome-message">
+                <p>Bonjour ! Je suis votre assistant voyage. Dites-moi où vous souhaitez aller.</p>
+                <p class="hint">Essayez : « Je veux visiter l'Espagne » puis « 800 euros » puis « Propose une autre ville ».</p>
+            </div>
+        </main>
+
+        <!-- Zone de saisie -->
+        <footer class="input-area">
+            <form id="chat-form" class="chat-form">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Écrivez votre message..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="send-btn" class="btn-send">
+                    Envoyer
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
