@@ -11,6 +11,13 @@ Concepts clés :
   - LCEL               : assemble Prompt → Modèle → Parser avec l'opérateur |
 """
 
+""" ******************************************************************
+groq api key: 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            !!!!!
+groq api base: https://api.groq.com/openai/v1                                     !!!!!  
+groq model: llama-3.1-8b-instant                                                  !!!!!                  
+
+****************************************************************** """
+
 import os
 import uuid
 from pathlib import Path
